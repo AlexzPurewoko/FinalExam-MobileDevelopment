@@ -8,10 +8,10 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 
-class StateListRecylerAdapter(
+class StateListRecyclerAdapter(
     private val stateList: List<StateMetadata>,
     private val onItemClicked: (stateMetadata: StateMetadata) -> Unit
-): RecyclerView.Adapter<StateListRecylerAdapter.StateItemRecyclerViewHolder>() {
+): RecyclerView.Adapter<StateListRecyclerAdapter.StateItemRecyclerViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): StateItemRecyclerViewHolder {
         val inflateView = LayoutInflater.from(parent.context)

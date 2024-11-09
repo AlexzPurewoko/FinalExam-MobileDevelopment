@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
             val stateCountry = RequestAPI.getStateCountryDataset()
 
             withContext(Dispatchers.Main) {
-                recyclerView.adapter = StateListRecylerAdapter(stateCountry.data) {
+                recyclerView.adapter = StateListRecyclerAdapter(stateCountry.data) {
                     navigateToDetailCountry(it)
                 }
             }
